@@ -1,12 +1,15 @@
 var count = 0;
+
 $('.badge').on('click', function(){
-    count +=1;
-    if ( count % 2 == 1){
-        $('.badge').html('Light Mode')
-    }
+  count += 1;
+  if (count % 2 == 1) {
+    $('.badge').html('Light');
+  } else {
+    $('.badge').html('Dark')
+  }
 });
 
-var name = 'kim';
+var name = 'choi';
 //변수의 선언, 할당, 범위
 // let은 재선언 불가, 범위{}
 // const 재선언, 재할당 불가, 변하면 안되는 값 보관하기 좋음, 범위{}
